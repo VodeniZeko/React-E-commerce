@@ -1,0 +1,57 @@
+:root{
+--mainBlue:#2a2a71;
+--lightBlue:#009ffd;
+--mainWhite:#f3f3f3;
+--mainDark:#232528;
+--mainYellow:#ffa400;
+}
+
+body{
+  font-family: 'Secular One', sans-serif !important;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+  overflow: scroll;
+}
+
+.hr {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	border:0;
+	border-top: 1px solid rgba(1,34,45,23);
+
+}
+
+.text-title {
+  font-family: 'Gloria Hallelujah', cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.text-blue {
+color: var(--mainBlue);
+}
+
+.text-light {
+  color: var(--lightBlue);
+}
+
+.btn-black{
+	background:transparent;
+	text-transform: capitalize;
+	font-size: 0.8em !important;
+	color: var(--mainDark);
+	border-radius:0 !important;
+	border:0.1em solid var(--mainDark)!important;
+
+}
+
+.btn-black:hover {
+	background: var(--mainDark) !important;
+	color: var(--mainWhite) !important;
+}
+
+.cart-icon{
+	cursor: pointer;
+	font-size: 1.2em;
+	color: var(--mainYellow);
+}
