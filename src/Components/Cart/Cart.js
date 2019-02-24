@@ -15,14 +15,16 @@ export default class Cart extends Component {
 			{value => {
 				const{cart} = value;
 				if (cart.length >0) {
-					return(
+					return (
 						<React.Fragment>
 						<div className=" title container py-5">
 						<Title name='your' title='cart'/>
 						</div>
 				        <CartColumns/>
 				        <CartList value={value} />
-				        <CartTotals value={value} />
+				        <CartTotals value={value} 
+				        history= {this.props.history} 
+				        />
 				        </React.Fragment>
 						);
 				} else {
